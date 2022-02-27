@@ -1,0 +1,217 @@
+/** @format */
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/* Common Styles or Utilities*/
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f1ff;
+  margin: 0%;
+  padding: 0%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Container {
+  background-color: white;
+  width: 870px;
+  padding: 30px;
+  margin-top: 21px;
+  border-radius: 10px;
+}
+hr {
+  margin-top: 45px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 1px solid #d1d1d1;
+}
+/* Header */
+.Header-Container {
+  width: 100%;
+  background-color: #562eff;
+}
+.Navbar {
+  display: flex;
+  align-items: center;
+}
+.Logo img {
+  width: 40.42px;
+  height: 51px;
+  margin-left: 285px;
+  align-items: center;
+  margin-top: 26px;
+  margin-bottom: 17px;
+}
+.Logo-Name {
+  width: 54px;
+  height: 36px;
+  margin-top: 33px;
+  margin-bottom: 25px;
+  margin-left: 16px;
+  color: white;
+}
+.Lists {
+  display: flex;
+}
+.List1 {
+  text-decoration: none;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: 500px;
+  color: white;
+}
+.List2 {
+  text-decoration: none;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: 36px;
+  color: white;
+  justify-content: flex-end;
+}
+.Profile img {
+  width: 51px;
+  height: 51px;
+  margin-top: 23px;
+  margin-bottom: 20px;
+  margin-left: 36px;
+}
+/* Top-Players Styles */
+.Top-Players-Title {
+  color: #562eff;
+  font-size: 24px;
+  margin-top: 3px;
+}
+.Players {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+}
+.Player {
+  display: flex;
+  align-items: center;
+}
+.Player img {
+  width: 56px;
+  height: 56px;
+}
+.Player-Name {
+  margin-left: 16px;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* Top Blogs Styles */
+.Top-Blogs {
+  margin-top: 30px;
+}
+.Top-Blogs-Title {
+  color: #562eff;
+}
+.Blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
+}
+.Blog {
+  display: flex;
+}
+.Thumbnail img {
+  width: 177px;
+  height: 117px;
+}
+.Blog-Info {
+  margin-left: 16px;
+}
+.Blog-Title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.Blog-Author {
+  color: #9f9f9f;
+}
+.Blog-Author a {
+  text-decoration: none;
+  color: #562eff;
+  font-size: 16px;
+}
+/* Latest Course Styles */
+.Courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 25px;
+}
+.Latest-Course-Title {
+  color: #562eff;
+}
+.Banner img {
+  width: 224px;
+  height: 104px;
+}
+.Course-Author {
+  color: #ed6b4f;
+  font-size: 14.6913px;
+}
+.Course-Info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filled,
+.empty {
+  color: #ffc014;
+}
+.Rating {
+  color: #a2a2a2;
+}
+.Course-Duration {
+  background: #ffe4e8;
+  border-radius: 14.6913px;
+  color: #ff4a60;
+}
+/* Media*/
+/* For Mobile Devices */
+@media screen and (max-width: 688px) {
+  .Container {
+    width: 100%;
+  }
+  .Players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Player {
+    flex-direction: column;
+  }
+  .Blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Blog {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* Tablet Devices */
+@media screen and (min-width: 689px) and (max-width: 992px) {
+  .Container {
+    width: 100%;
+  }
+  .Players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Blog {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
